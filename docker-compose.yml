@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  livecorona_web:
+    container_name: nginx
+    # 이미지 지정 - 직접 작성한 dockerfile을 실행하여 컨테이너 생성
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - "8080:80"
