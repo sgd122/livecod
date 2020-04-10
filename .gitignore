@@ -199,3 +199,7 @@ build/
 
 # ignore pycache
 __pycache__
+
+# Docker files
+Dockerfile
+docker-compose.yml
